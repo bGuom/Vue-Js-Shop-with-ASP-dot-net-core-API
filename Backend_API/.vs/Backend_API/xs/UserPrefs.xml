@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{7E403B41-737E-4CE2-BF55-A92A20F27002}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Backend_API/Controllers/DishesController.cs">
+    <Files>
+      <File FileName="Backend_API/Controllers/AuthController.cs" Line="1" Column="1" />
+      <File FileName="Backend_API/Controllers/DishesController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Backend_API" expanded="True">
+            <Node name="Backend_API" expanded="True">
+              <Node name="Constants" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ImagesController.cs" selected="True" />
+              </Node>
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Backend__API PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

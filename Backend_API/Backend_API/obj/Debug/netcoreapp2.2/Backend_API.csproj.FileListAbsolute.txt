@@ -1,0 +1,14 @@
+F:/Fiverr/AusProj/API/Backend_API/Backend_API/bin/Debug/netcoreapp2.2/Backend_API.deps.json
+F:/Fiverr/AusProj/API/Backend_API/Backend_API/bin/Debug/netcoreapp2.2/Backend_API.runtimeconfig.json
+F:/Fiverr/AusProj/API/Backend_API/Backend_API/bin/Debug/netcoreapp2.2/Backend_API.runtimeconfig.dev.json
+F:/Fiverr/AusProj/API/Backend_API/Backend_API/bin/Debug/netcoreapp2.2/Backend_API.dll
+F:/Fiverr/AusProj/API/Backend_API/Backend_API/bin/Debug/netcoreapp2.2/Backend_API.pdb
+F:/Fiverr/AusProj/API/Backend_API/Backend_API/obj/Debug/netcoreapp2.2/Backend_API.csprojAssemblyReference.cache
+F:/Fiverr/AusProj/API/Backend_API/Backend_API/obj/Debug/netcoreapp2.2/Backend_API.csproj.CoreCompileInputs.cache
+F:/Fiverr/AusProj/API/Backend_API/Backend_API/obj/Debug/netcoreapp2.2/Backend_API.RazorAssemblyInfo.cache
+F:/Fiverr/AusProj/API/Backend_API/Backend_API/obj/Debug/netcoreapp2.2/Backend_API.RazorAssemblyInfo.cs
+F:/Fiverr/AusProj/API/Backend_API/Backend_API/obj/Debug/netcoreapp2.2/Backend_API.AssemblyInfoInputs.cache
+F:/Fiverr/AusProj/API/Backend_API/Backend_API/obj/Debug/netcoreapp2.2/Backend_API.AssemblyInfo.cs
+F:/Fiverr/AusProj/API/Backend_API/Backend_API/obj/Debug/netcoreapp2.2/Backend_API.RazorTargetAssemblyInfo.cache
+F:/Fiverr/AusProj/API/Backend_API/Backend_API/obj/Debug/netcoreapp2.2/Backend_API.dll
+F:/Fiverr/AusProj/API/Backend_API/Backend_API/obj/Debug/netcoreapp2.2/Backend_API.pdb

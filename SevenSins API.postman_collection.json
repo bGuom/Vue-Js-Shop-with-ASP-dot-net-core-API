@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "a4e07fe7-bb73-4bd8-aff6-e427721e8d71",
+		"name": "SevenSins API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "http://localhost:25803/api/auth/GetToken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\":\"admin@test.com\",\"password\":\"ABCabc123!@#\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:25803/api/auth/GetToken",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "25803",
+							"path": [
+								"api",
+								"auth",
+								"GetToken"
+							]
+						},
+						"description": "Login user"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Dish",
+			"item": [
+				{
+					"name": "http://localhost:25803/api/dishes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkB0ZXN0LmNvbSIsImp0aSI6ImZiODY3N2YzLWY4ZGYtNGE2My1hNTE5LTRhNTY4ODU3NDE4MSIsIlJvbGUiOiJBZG1pbiIsImV4cCI6MTU4NzAxOTg2OCwiaXNzIjoiQVBJU2VydmVyIiwiYXVkIjoiV2ViQXBwIn0.Ca65sO2zWrI15lvphbPmGXGJf8DIf-L34Hqbf5IsZtU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"DishName\" : \"Good Bread\",\n\t\"DishDescription\":\"Good Bread is awsome food. We love good bread becouse it's good and very tasty. This bread is from all around the world\",\n\t\"DishPrice\":\"15\",\n\t\"Images\": [\"d4628708-fa54-4fb2-94bb-3190de6783cf\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:25803/api/dishes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "25803",
+							"path": [
+								"api",
+								"dishes"
+							]
+						},
+						"description": "Create Dish"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:25803/api/dishes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:25803/api/dishes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "25803",
+							"path": [
+								"api",
+								"dishes"
+							]
+						},
+						"description": "Get All Dishes"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:25803/api/dishes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:25803/api/dishes/1d4057b8-de2b-4870-ac8e-65f18af3d882",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "25803",
+							"path": [
+								"api",
+								"dishes",
+								"1d4057b8-de2b-4870-ac8e-65f18af3d882"
+							]
+						},
+						"description": "Get Dish By ID"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:25803/api/dishes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkB0ZXN0LmNvbSIsImp0aSI6IjFjYTY0ZjI5LWY3MWMtNDFjZC1iMDFhLWFmOWZlNjJlNGVjNyIsIlJvbGUiOiJBZG1pbiIsImV4cCI6MTU4Njk0MzE3MywiaXNzIjoiQVBJU2VydmVyIiwiYXVkIjoiV2ViQXBwIn0.C_L0tBZnsbUr4C6mTQadcWYy4s5a857M82oRVOcXl2o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"DishId\":\"1d4057b8-de2b-4870-ac8e-65f18af3d882\",\n\t\"DishName\" : \"Pizza\",\n\t\"DishDescription\":\"This is new Pizza Description\",\n\t\"DishPrice\":\"18\",\n\t\"Images\": [\"d4628708-fa54-4fb2-94bb-3190de6783cf\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:25803/api/dishes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "25803",
+							"path": [
+								"api",
+								"dishes"
+							]
+						},
+						"description": "Dish Update"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Image",
+			"item": [
+				{
+					"name": "http://localhost:25803/api/images/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkB0ZXN0LmNvbSIsImp0aSI6IjFjYTY0ZjI5LWY3MWMtNDFjZC1iMDFhLWFmOWZlNjJlNGVjNyIsIlJvbGUiOiJBZG1pbiIsImV4cCI6MTU4Njk0MzE3MywiaXNzIjoiQVBJU2VydmVyIiwiYXVkIjoiV2ViQXBwIn0.C_L0tBZnsbUr4C6mTQadcWYy4s5a857M82oRVOcXl2o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Name",
+									"value": "Image1",
+									"type": "text"
+								},
+								{
+									"key": "Image",
+									"type": "file",
+									"src": "/C:/Users/Buddhi/Desktop/SevenSins/pizza.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:25803/api/images/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "25803",
+							"path": [
+								"api",
+								"images",
+								""
+							]
+						},
+						"description": "Upload Image File"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:25803/api/images/5f49f554-81a6-4c4e-a0f0-930f03785649",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:25803/api/images/5f49f554-81a6-4c4e-a0f0-930f03785649",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "25803",
+							"path": [
+								"api",
+								"images",
+								"5f49f554-81a6-4c4e-a0f0-930f03785649"
+							]
+						},
+						"description": "Get Image By ID"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:25803/api/images/5f49f554-81a6-4c4e-a0f0-930f03785649",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkB0ZXN0LmNvbSIsImp0aSI6IjFjYTY0ZjI5LWY3MWMtNDFjZC1iMDFhLWFmOWZlNjJlNGVjNyIsIlJvbGUiOiJBZG1pbiIsImV4cCI6MTU4Njk0MzE3MywiaXNzIjoiQVBJU2VydmVyIiwiYXVkIjoiV2ViQXBwIn0.C_L0tBZnsbUr4C6mTQadcWYy4s5a857M82oRVOcXl2o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:25803/api/images/5f49f554-81a6-4c4e-a0f0-930f03785649",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "25803",
+							"path": [
+								"api",
+								"images",
+								"5f49f554-81a6-4c4e-a0f0-930f03785649"
+							]
+						},
+						"description": "Delete Image"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Rating",
+			"item": [
+				{
+					"name": "http://localhost:25803/api/ratings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"DishId\":\"1d4057b8-de2b-4870-ac8e-65f18af3d882\",\n\t\"UserName\" : \"PizzaBoy\",\n\t\"UserEmail\":\"rev@gmail.com\",\n\t\"Rate\":\"4\",\n\t\"Review\":\"Good Pizza\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:25803/api/ratings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "25803",
+							"path": [
+								"api",
+								"ratings"
+							]
+						},
+						"description": "Create Rating"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:25803/api/ratings/1d4057b8-de2b-4870-ac8e-65f18af3d882",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:25803/api/ratings/1d4057b8-de2b-4870-ac8e-65f18af3d882",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "25803",
+							"path": [
+								"api",
+								"ratings",
+								"1d4057b8-de2b-4870-ac8e-65f18af3d882"
+							]
+						},
+						"description": "Get All ratings for given dish ID"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:25803/api/ratings/1d4057b8-de2b-4870-ac8e-65f18af3d882",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkB0ZXN0LmNvbSIsImp0aSI6ImQzNDU1NmFlLTM5MDktNGRlNi1iYTk4LTA3MmRhMzM4ZDBiYSIsIlJvbGUiOiJBZG1pbiIsImV4cCI6MTU4Njk0NTQ5NywiaXNzIjoiQVBJU2VydmVyIiwiYXVkIjoiV2ViQXBwIn0.l6ORb7BTcAEItvXD0qXRKdcrhAQRzsSM2nsqGwUwgik",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:25803/api/ratings/d23edc25-eb5e-4304-9b06-b169d0bfa21a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "25803",
+							"path": [
+								"api",
+								"ratings",
+								"d23edc25-eb5e-4304-9b06-b169d0bfa21a"
+							]
+						},
+						"description": "Delete Rating by Id"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

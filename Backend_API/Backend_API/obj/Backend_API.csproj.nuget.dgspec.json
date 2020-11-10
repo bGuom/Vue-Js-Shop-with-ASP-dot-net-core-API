@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/buddhigunarathne/Desktop/7Sins/API/Backend_API/Backend_API/Backend_API.csproj": {}
+  },
+  "projects": {
+    "/Users/buddhigunarathne/Desktop/7Sins/API/Backend_API/Backend_API/Backend_API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/buddhigunarathne/Desktop/7Sins/API/Backend_API/Backend_API/Backend_API.csproj",
+        "projectName": "Backend_API",
+        "projectPath": "/Users/buddhigunarathne/Desktop/7Sins/API/Backend_API/Backend_API/Backend_API.csproj",
+        "packagesPath": "/Users/buddhigunarathne/.nuget/packages/",
+        "outputPath": "/Users/buddhigunarathne/Desktop/7Sins/API/Backend_API/Backend_API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/buddhigunarathne/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
